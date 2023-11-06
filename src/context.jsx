@@ -11,7 +11,6 @@ const Context = ({ children }) => {
 
   const impostaCibi = () => {
     const ciboTotale = peso * 40;
-    console.log(percento);
     const quantoSecco = parseInt(((ciboTotale / 3) * percento) / 100);
     const quantoUmido = parseInt((ciboTotale * (100 - percento)) / 100);
     setSecco(quantoSecco);
